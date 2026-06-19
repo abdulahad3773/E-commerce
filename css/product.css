@@ -1,0 +1,85 @@
+/* 1. Basic Layout */
+.container {
+    display: flex; /* Puts the two boxes side by side */
+    flex-wrap: wrap; 
+    padding: 50px 5%;
+    gap: 30px;
+}
+
+.box {
+    flex: 1; /* Makes both boxes equal width */
+    min-width: 300px; /* Prevents them from getting too skinny */
+}
+
+/* 2. Image Styling */
+.big-image {
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* 3. Text Styling */
+.tag {
+    background: #ffcfad;
+    color: #FF6B00;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.title { font-size: 40px; margin: 10px 0; }
+.price { color: #FF6B00; margin-bottom: 20px; }
+.desc { color: #757575; margin-bottom: 30px; }
+
+/* 4. Simple Size Radio Buttons */
+.size-options {
+    margin: 15px 0;
+}
+
+.size-options label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* This changes the color when you click the radio button */
+input[type="radio"]:checked + label {
+    background-color: #FF6B00;
+    color: white;
+    border-color: #FF6B00;
+}
+
+/* 5. Buttons */
+.buttons { margin-top: 30px; }
+
+.buy-now {
+    background-color: #FF6B00;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+     transition: all 0.3s ease;
+}
+
+.cart {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.buy-now:hover,.cart:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
